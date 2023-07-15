@@ -1,0 +1,62 @@
+site_name: Hysteria, Hypnosis, and Hallucination
+site_author: Karen Majewicz
+copyright : "2022"
+theme: 
+   name: material
+   font:
+      text: Segoe UI
+   icon:
+     :musical_score:
+   palette:
+      primary: white
+      accent: black
+      
+   features:
+      - navigation.indexes
+      - navigation.instant
+#       - navigation.sections
+      - content.tooltips
+#       - navigation.tabs
+#       - navigation.tabs.sticky
+      - navigation.top
+      - toc.integrate
+   logo: images/logo2.png
+ #   icon:
+#       repo: fontawesome/brands/github
+#    highlightjs: true
+#   titles_only: true
+#   include_homepage_in_sidebar: false
+plugins:
+  - search
+#   - git-revision-date-localized:
+#       enable_creation_date: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+      
+nav:
+- Dreamland Faces Home: "https://dreamlandfaces.com"
+- About the program: 'index.md'
+- The Desks of Kador- Scoring an Epistolary Silent Film : 'desksOfKador.md'
+- Scoring Silent Films : 'scoringSilents.md'
+
